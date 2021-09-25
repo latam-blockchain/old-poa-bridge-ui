@@ -1,6 +1,5 @@
 .foreign-logo {
-  background-image: url("#{ $foreign-logo-image }"), linear-gradient(#fff, #fff);
-  border-radius: 100%;
+  background-image: url("#{ $foreign-logo-image }");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: contain;
