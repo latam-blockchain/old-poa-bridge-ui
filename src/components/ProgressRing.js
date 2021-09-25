@@ -10,7 +10,7 @@ export class ProgressRing extends Component {
     const { radius, stroke, progress, confirmationNumber, hideConfirmationNumber } = this.props
     const { circumference, normalizedRadius } = this.state
     const strokeDashoffset = circumference - progress / 100 * circumference
-    const confirmations = hideConfirmationNumber ? '' : `${confirmationNumber}/8`
+    const confirmations = hideConfirmationNumber ? '' : `${confirmationNumber}/1`
     return (
       <svg
         height={radius * 2}
