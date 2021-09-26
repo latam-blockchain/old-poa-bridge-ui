@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/old-poa-bridge-ui/precache-manifest.c9ad8d59d6ded24354c08f3cee1d28fa.js"
+  "/old-poa-bridge-ui/precache-manifest.6586906480112eef89192d6a743101f6.js"
 );
 
 workbox.clientsClaim();

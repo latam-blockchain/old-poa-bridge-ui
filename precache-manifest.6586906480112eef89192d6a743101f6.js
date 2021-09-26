@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "71e27905d41f0bcc847920ae86ffce7e",
-    "url": "/old-poa-bridge-ui/static/media/close.71e27905.svg"
+    "revision": "d7d7c4c6dbe228b50b6349e6e0fdf4b8",
+    "url": "/old-poa-bridge-ui/static/media/center-image-pointing-right.d7d7c4c6.svg"
   },
   {
     "revision": "56fa0a1a606755ca6255",
@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/old-poa-bridge-ui/static/js/runtime~main.7823d358.js"
   },
   {
-    "revision": "679cdcc2053b8e4d4f09",
-    "url": "/old-poa-bridge-ui/static/js/2.c1053822.chunk.js"
+    "revision": "4dfcca310c701a8e9ca5",
+    "url": "/old-poa-bridge-ui/static/js/2.c3339385.chunk.js"
   },
   {
     "revision": "479d6f1cae07775abffd7db437ba4c2c",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/old-poa-bridge-ui/static/media/i@3x.67616475.png"
   },
   {
-    "revision": "d7d7c4c6dbe228b50b6349e6e0fdf4b8",
-    "url": "/old-poa-bridge-ui/static/media/center-image-pointing-right.d7d7c4c6.svg"
+    "revision": "71e27905d41f0bcc847920ae86ffce7e",
+    "url": "/old-poa-bridge-ui/static/media/close.71e27905.svg"
   },
   {
     "revision": "56fa0a1a606755ca6255",
@@ -52,12 +52,12 @@ self.__precacheManifest = [
     "url": "/old-poa-bridge-ui/static/media/logo-0.2f0d9a00.svg"
   },
   {
-    "revision": "159133e3487fe0814552e003dc442df7",
-    "url": "/old-poa-bridge-ui/static/media/logo-2.159133e3.svg"
-  },
-  {
     "revision": "84e0b0dc8fc38785fffd33babe7ec4f3",
     "url": "/old-poa-bridge-ui/static/media/logo-1.84e0b0dc.svg"
+  },
+  {
+    "revision": "159133e3487fe0814552e003dc442df7",
+    "url": "/old-poa-bridge-ui/static/media/logo-2.159133e3.svg"
   },
   {
     "revision": "f5f4685c4a5eeea9f0df5e7bfc1d0823",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/old-poa-bridge-ui/static/media/logo_big-white.fc35dd80.png"
   },
   {
-    "revision": "c7edef1fc4f3e0d0f7b9d913e0517f17",
+    "revision": "8e784286ca4c6174e2efa54c99a71e64",
     "url": "/old-poa-bridge-ui/index.html"
   }
 ];
