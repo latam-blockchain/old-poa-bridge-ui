@@ -18,21 +18,22 @@ import { toDecimals } from "../stores/utils/decimals";
 @inject("RootStore")
 @observer
 export class Bridge extends React.Component {
-  state = {
-    reverse: false,
-    amount: "",
-    modalData: {},
-    confirmationData: {},
-    showModal: false,
-    showConfirmation: false,
-  };
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      reverse: false,
+      amount: "",
+      modalData: {},
+      confirmationData: {},
+      showModal: false,
+      showConfirmation: false,
+    };
+  }
   handleInputChange = (name) => (event) => {
     this.setState({
       [name]: event.target.value,
     });
   };
-
   componentDidMount() {
     const { web3Store } = this.props.RootStore;
     web3Store.getWeb3Promise.then(() => {
@@ -50,18 +51,21 @@ export class Bridge extends React.Component {
       }
     });
   }
-
   componentDidUpdate() {
     const { web3Store } = this.props.RootStore;
-    web3Store.getWeb3Promise.then(() => {
-      const reverse =
-        web3Store.metamaskNet.id.toString() ===
-        web3Store.foreignNet.id.toString();
-      if (reverse !== this.state.reverse) {
-        this.setState({
-          reverse,
-        });
-      }
+    window.ethereum.on("networkChanged", (networkId) => {
+      web3Store.getWeb3Promise.then(() => {
+        if (!networkId || !web3Store.foreignNet.id) {
+          this.forceUpdate();
+        } else {
+          const reverse =
+            networkId.toString() === web3Store.foreignNet.id.toString();
+          if (reverse !== this.state.reverse) {
+            this.setState({ reverse });
+          }
+        }
+      });
+      console.log(this.state);
     });
   }
 
