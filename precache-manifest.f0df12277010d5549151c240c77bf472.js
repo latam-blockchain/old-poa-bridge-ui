@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/old-poa-bridge-ui/static/media/center-image-pointing-right.d7d7c4c6.svg"
   },
   {
-    "revision": "56fa0a1a606755ca6255",
-    "url": "/old-poa-bridge-ui/static/css/main.75cea353.chunk.css"
+    "revision": "8fb2df85e4129d57f43e",
+    "url": "/old-poa-bridge-ui/static/css/main.47c17809.chunk.css"
   },
   {
     "revision": "cc0bb5dc83561017a831",
@@ -36,16 +36,12 @@ self.__precacheManifest = [
     "url": "/old-poa-bridge-ui/static/media/close.71e27905.svg"
   },
   {
-    "revision": "56fa0a1a606755ca6255",
-    "url": "/old-poa-bridge-ui/static/js/main.ab5fdb15.chunk.js"
+    "revision": "8fb2df85e4129d57f43e",
+    "url": "/old-poa-bridge-ui/static/js/main.038d6286.chunk.js"
   },
   {
     "revision": "0a8547da65ba0c353ac675ec5bbf9dd8",
     "url": "/old-poa-bridge-ui/static/media/center-image-pointing-left.0a8547da.svg"
-  },
-  {
-    "revision": "4c8e412f855fd76e3fc4058e8027e7d9",
-    "url": "/old-poa-bridge-ui/static/media/logo-loading.4c8e412f.svg"
   },
   {
     "revision": "2f0d9a00f867d98726e37f86e3a594a9",
@@ -60,6 +56,10 @@ self.__precacheManifest = [
     "url": "/old-poa-bridge-ui/static/media/logo-2.159133e3.svg"
   },
   {
+    "revision": "4c8e412f855fd76e3fc4058e8027e7d9",
+    "url": "/old-poa-bridge-ui/static/media/logo-loading.4c8e412f.svg"
+  },
+  {
     "revision": "f5f4685c4a5eeea9f0df5e7bfc1d0823",
     "url": "/old-poa-bridge-ui/static/media/logo.f5f4685c.png"
   },
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/old-poa-bridge-ui/static/media/logo_big-white.fc35dd80.png"
   },
   {
-    "revision": "8e784286ca4c6174e2efa54c99a71e64",
+    "revision": "d8f7b6e98fdd5a2916bc5add2cde32aa",
     "url": "/old-poa-bridge-ui/index.html"
   }
 ];
