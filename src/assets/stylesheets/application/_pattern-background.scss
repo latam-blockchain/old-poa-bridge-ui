@@ -1,18 +1,17 @@
 .pattern-background {
-    margin-left: auto;
-    overflow: hidden;
-    padding-top: 25px;
-    width: 15%;
+  margin-left: auto;
+  overflow: hidden;
+  padding-top: 25px;
+  width: 15%;
 
-    .pattern-background-image {
-      background-image: url('#{ $pattern-background-image }');
-      background-position: 0 50%;
-      background-repeat: repeat-x;
-      height: 360px;
-      min-width: 192px;
-    }
-
-    @media screen and (max-width: $tablet-width-landscape) {
-      display: none;
-    }
+  .pattern-background-image {
+    background-position: 0 50%;
+    background-repeat: repeat-x;
+    height: 360px;
+    min-width: 192px;
   }
+
+  @media screen and (max-width: $tablet-width-landscape) {
+    display: none;
+  }
+}

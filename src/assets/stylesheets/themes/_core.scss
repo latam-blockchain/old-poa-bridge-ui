@@ -1,10 +1,10 @@
-$theme-name: 'core';
+$theme-name: "core";
 
 // base colors
-$primary-color: #5c34a2;
-$primary-color-dark: #502d8d;
-$primary-color-darker: #45277a;
-$secondary-color: #60db97;
+$primary-color: #428b35;
+$primary-color-dark: #35742a;
+$primary-color-darker: #2c5e23;
+$secondary-color: #eed64f;
 $secondary-color-dark: #64a231;
 $tertiary-color: #ffaa07;
 $danger-color: #f13662;
@@ -14,11 +14,11 @@ $text-color: #333;
 $link-color: $primary-color;
 
 $gradient-color-1: $primary-color;
-$gradient-color-2: #7b5ab2;
+$gradient-color-2: #7bc46e;
 
 // main
 $main-background-color: #fff;
-$main-font-family: 'Nunito', sans-serif;
+$main-font-family: "Nunito", sans-serif;
 
 // header
 $header-background-color: $primary-color;
@@ -43,26 +43,31 @@ $footer-text-color: #fff;
 $separator-color: #e4e4e4;
 
 // background
-$pattern-background-image: $base-images-path + '/themes/' + $theme-name + '/background/bg-pattern.svg';
+$pattern-background-image: $base-images-path + "/themes/" + $theme-name +
+  "/background/bg-pattern.svg";
 
 // social icons
 $social-icons-background-color: #fff;
 $social-icons-icon-color: $primary-color;
 
 // logo
-$logo-image: $base-images-path + '/themes/' + $theme-name + '/logos/logo.svg';
+$logo-image: $base-images-path + "/themes/" + $theme-name + "/logos/logo.png";
 
 // home logo
-$home-logo-image: $base-images-path + '/themes/' + $theme-name + '/logos/logo-home.png';
-$home-logo-image-modal: $base-images-path + '/themes/' + $theme-name + '/logos/logo-home-modal.png';
-$home-logo-width: 52px;
-$home-logo-height: 16px;
+$home-logo-image: $base-images-path + "/themes/" + $theme-name +
+  "/logos/logo_big-white.png";
+$home-logo-image-modal: $base-images-path + "/themes/" + $theme-name +
+  "/logos/logo_big-white.png";
+$home-logo-width: 62px;
+$home-logo-height: 62px;
 
 // foreign logo
-$foreign-logo-image: $base-images-path + '/themes/' + $theme-name + '/logos/logo-foreign.svg';
-$foreign-logo-image-modal: $base-images-path + '/themes/' + $theme-name + '/logos/logo-foreign-modal.svg';
+$foreign-logo-image: $base-images-path + "/themes/" + $theme-name +
+  "/logos/logo_big-white.png";
+$foreign-logo-image-modal: $base-images-path + "/themes/" + $theme-name +
+  "/logos/logo_big-white.png";
 $foreign-logo-width: 54px;
-$foreign-logo-height: 11px;
+$foreign-logo-height: 54px;
 
 // buttons
 $button-background-color: $secondary-color;
@@ -95,7 +100,8 @@ $mobile-menu-overlay-color: rgba($primary-color-darker, 0.9);
 // loading
 $loading-item-background-color: $secondary-color;
 $loading-item-text-color: #fff;
-$loading-logo: $base-images-path + '/themes/' + $theme-name + '/logos/logo-loading.svg';
+$loading-logo: $base-images-path + "/themes/" + $theme-name +
+  "/logos/logo-loading.svg";
 
 // bridge section
 $bridge-gradient-start: $gradient-color-1;
@@ -112,11 +118,16 @@ $bridge-textfield-color: #fff;
 $bridge-textfield-placeholder-color: rgba(255, 255, 255, 0.7);
 $bridge-side-image-width: 272px;
 $bridge-side-image-height: 276px;
-$bridge-image-center-pointing-left: $base-images-path + '/themes/' + $theme-name + '/bridge/center-image-pointing-left.svg';
-$bridge-image-center-pointing-right: $base-images-path + '/themes/' + $theme-name + '/bridge/center-image-pointing-right.svg';
-$bridge-image-center-pointing-down: $base-images-path + '/themes/' + $theme-name + '/bridge/center-image-pointing-down@2x.png';
-$bridge-image-left: $base-images-path + '/themes/' + $theme-name + '/bridge/pattern-1.png';
-$bridge-image-right: $base-images-path + '/themes/' + $theme-name + '/bridge/pattern-2.png';
+$bridge-image-center-pointing-left: $base-images-path + "/themes/" + $theme-name +
+  "/bridge/center-image-pointing-left.svg";
+$bridge-image-center-pointing-right: $base-images-path + "/themes/" +
+  $theme-name + "/bridge/center-image-pointing-right.svg";
+$bridge-image-center-pointing-down: $base-images-path + "/themes/" + $theme-name +
+  "/bridge/center-image-pointing-down@2x.png";
+$bridge-image-left: $base-images-path + "/themes/" + $theme-name +
+  "/bridge/pattern-1.png";
+$bridge-image-right: $base-images-path + "/themes/" + $theme-name +
+  "/bridge/pattern-2.png";
 $bridge-transfer-title-color: $primary-color;
 
 // bridge alert
@@ -130,9 +141,12 @@ $status-text-color: $text-color;
 $status-authority-number-color: $primary-color;
 $status-authority-address-color: $text-color;
 
-$status-authority-logo-0: $base-images-path + '/themes/' + $theme-name + '/status/authority/logo-0.svg';
-$status-authority-logo-1: $base-images-path + '/themes/' + $theme-name + '/status/authority/logo-1.svg';
-$status-authority-logo-2: $base-images-path + '/themes/' + $theme-name + '/status/authority/logo-2.svg';
+$status-authority-logo-0: $base-images-path + "/themes/" + $theme-name +
+  "/status/authority/logo-0.svg";
+$status-authority-logo-1: $base-images-path + "/themes/" + $theme-name +
+  "/status/authority/logo-1.svg";
+$status-authority-logo-2: $base-images-path + "/themes/" + $theme-name +
+  "/status/authority/logo-2.svg";
 
 // datablock
 $datablock-value-color: $primary-color;
