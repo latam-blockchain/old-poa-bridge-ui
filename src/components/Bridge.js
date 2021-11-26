@@ -35,7 +35,7 @@ export class Bridge extends React.Component {
     });
   };
   componentDidMount() {
-    const { web3Store } = this.props.RootStore;
+    const { web3Store, alertStore } = this.props.RootStore;
     web3Store.getWeb3Promise.then(() => {
       if (!web3Store.metamaskNet.id || !web3Store.foreignNet.id) {
         this.forceUpdate();
@@ -50,24 +50,31 @@ export class Bridge extends React.Component {
         }
       }
     });
-  }
-  componentDidUpdate() {
-    const { web3Store } = this.props.RootStore;
     window.ethereum.on("networkChanged", (networkId) => {
+      console.log(networkId);
       web3Store.getWeb3Promise.then(() => {
         if (!networkId || !web3Store.foreignNet.id) {
           this.forceUpdate();
         } else {
           const reverse =
             networkId.toString() === web3Store.foreignNet.id.toString();
-          if (reverse !== this.state.reverse) {
-            this.setState({ reverse });
+          if (
+            !reverse &&
+            networkId.toString() !== web3Store.homeNet.id.toString()
+          ) {
+            alertStore.pushError(
+              `You are on an unknown network on your wallet. Please select ${web3Store.homeNet.name} or ${web3Store.foreignNet.name} in order to communicate with the bridge.`
+            );
+          } else {
+            if (reverse !== this.state.reverse) {
+              this.setState({ reverse });
+            }
           }
         }
       });
-      console.log(this.state);
     });
   }
+  componentDidUpdate() {}
 
   async _sendToHome(amount) {
     const { web3Store, homeStore, alertStore, txStore, bridgeMode } =
